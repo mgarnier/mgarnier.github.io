@@ -1,0 +1,47 @@
+                         Complete.mode No.Interfaces
+akka.net                         0.099         0.098
+AutoMapper                       0.194         0.193
+CefSharp                         0.573         0.582
+corefx                           0.167         0.125
+EntityFramework                  0.059         0.057
+gitextensions                    0.338         0.344
+Glimpse                          0.202         0.227
+Hearthstone-Deck-Tracker         0.109         0.111
+ILSpy                            0.213         0.207
+MahApps.Metro                    0.573         0.573
+Mvc                              0.153         0.160
+Nancy                            0.385         0.419
+NLog                             0.257         0.259
+OpenRA                           0.145         0.144
+orleans                          0.167         0.156
+roslyn                           0.249         0.249
+ShareX                           0.144         0.150
+SparkleShare                     0.441         0.440
+VsVim                            0.055         0.055
+Wox                              0.349         0.357
+> 
+[1] "Descriptive statistics"
+               n  Mean Std.Dev Median   Min   Max  25th  75th  Skew Kurtosis
+Complete.mode 20 0.244   0.154  0.198 0.055 0.573 0.145 0.341 0.848   -0.393
+No.Interfaces 20 0.245   0.158  0.200 0.055 0.582 0.139 0.347 0.806   -0.543
+[1] "Shapiro-Wilk's Normality Test"
+       Variable Statistic   p-value Normality
+1 Complete.mode    0.8950    0.0332    NO    
+2 No.Interfaces    0.8971    0.0364    NO    
+> 
+[1] "Wilcox signed-ranked test"
+
+        Wilcoxon signed rank test with continuity correction
+
+data:  x = No.Interfaces and y = Complete.mode
+V = 97.5, p-value = 0.1655
+alternative hypothesis: true location shift is greater than 0
+
+             V                location shift 
+    97.5000000      0.1655088      0.0000000 
+Warning messages:
+1: In wilcox.test.default(x, y, paired = TRUE, alternative = alt) :
+  cannot compute exact p-value with ties
+2: In wilcox.test.default(x, y, paired = TRUE, alternative = alt) :
+  cannot compute exact p-value with zeroes
+> 
